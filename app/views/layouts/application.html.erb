@@ -3,13 +3,14 @@
 <head>
   <title>Likelion_SMWU</title>
   
-  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <!-- 부트스트랩 CSS를 로드 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  
+  <!-- 우리가 앞으로 작성할 CSS를 로드 -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <!-- 자바스크립트를 사용하겠다고 선언 -->
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   
-  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <!-- 부트스트랩의 .js를 링크 걸어줌 -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
