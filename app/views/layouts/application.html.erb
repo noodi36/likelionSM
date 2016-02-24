@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+    <title>SMWU LikeLion :: 숙명여대 멋쟁이사자처럼</title>
+    
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    
+    <!-- Meta --> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="여러분의 아이디어를 직접 기획하고 실현시켜보세요!">
     <meta name="author" content="">
-
-    <title>SMWU LikeLion :: 숙명여대 멋쟁이사자처럼</title>
-
     
-    <!-- 우리가 앞으로 작성할 CSS를 로드 -->
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <!-- 자바스크립트를 사용하겠다고 선언 -->
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/home/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/home/css/agency.css" rel="stylesheet">
     
     <!-- 부트스트랩의 .js를 링크 걸어줌 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <%= csrf_meta_tags %>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    
 </head>
+
 <body>
 
 <%= yield %>
